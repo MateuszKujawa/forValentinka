@@ -1,0 +1,38 @@
+{
+  "password": {
+    "title": "Hi Love 💗",
+    "subtitle": "Enter the password to see your surprise",
+    "error": "Try again, love 💭",
+    "hint": {
+      "button": "Hint",
+      "title": "Hint 🤔",
+      "words": "day, card, balcony, Bulgaria",
+      "close": "Got it"
+    }
+  },
+  "success": {
+    "message": "Congrats love, you got the password!"
+  },
+  "scratch": {
+    "title": "Scratch to reveal the message",
+    "hint": "Scratch me ✨",
+    "message": "I love you ❤️",
+    "continue": "Continue"
+  },
+  "love": {
+    "question": "And do you love me too?",
+    "yes": "yes ❤️",
+    "no": "no 🚫",
+    "awww": "Awww ❤️😊"
+  },
+  "countdown": {
+    "title": "Time until we meet:",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "today": "It's today, love!",
+    "addToCalendar": "Add to calendar",
+    "calendarSummary": "We're meeting up 💕"
+  }
+}

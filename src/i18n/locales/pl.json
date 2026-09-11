@@ -1,0 +1,38 @@
+{
+  "password": {
+    "title": "Cześć Skarbie 💗",
+    "subtitle": "Podaj hasło, żeby zobaczyć niespodziankę",
+    "error": "Spróbuj jeszcze raz, skarbie 💭",
+    "hint": {
+      "button": "Podpowiedź",
+      "title": "Podpowiedź 🤔",
+      "words": "dzień, kartka, balkon, bułgaria",
+      "close": "Rozumiem"
+    }
+  },
+  "success": {
+    "message": "Gratulacje skarbie, zgadłaś hasło!"
+  },
+  "scratch": {
+    "title": "Zdrap, żeby odkryć wiadomość",
+    "hint": "Zdrap mnie ✨",
+    "message": "Kocham Cię ❤️",
+    "continue": "Przejdź dalej"
+  },
+  "love": {
+    "question": "A czy ty mnie też kochasz?",
+    "yes": "tak ❤️",
+    "no": "nie 🚫",
+    "awww": "Awww ❤️😊"
+  },
+  "countdown": {
+    "title": "Do naszego spotkania zostało:",
+    "days": "Dni",
+    "hours": "Godziny",
+    "minutes": "Minuty",
+    "seconds": "Sekundy",
+    "today": "To już dzisiaj skarbie!",
+    "addToCalendar": "Dodaj do kalendarza",
+    "calendarSummary": "Spotykamy się 💕"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "password": {
+    "title": "Ahoj lásko 💗",
+    "subtitle": "Zadej heslo, ať uvidíš překvapení",
+    "error": "Zkus to znovu, lásko 💭",
+    "hint": {
+      "button": "Nápověda",
+      "title": "Nápověda 🤔",
+      "words": "den, kartička, balkón, Bulharsko",
+      "close": "Rozumím"
+    }
+  },
+  "success": {
+    "message": "Gratuluji lásko, uhodla jsi heslo!"
+  },
+  "scratch": {
+    "title": "Seškrábej a odkryj zprávu",
+    "hint": "Seškrábni mě ✨",
+    "message": "Miluji tě ❤️",
+    "continue": "Pokračovat"
+  },
+  "love": {
+    "question": "A miluješ mě taky?",
+    "yes": "ano ❤️",
+    "no": "ne 🚫",
+    "awww": "Awww ❤️😊"
+  },
+  "countdown": {
+    "title": "Do našeho setkání zbývá:",
+    "days": "Dny",
+    "hours": "Hodiny",
+    "minutes": "Minuty",
+    "seconds": "Sekundy",
+    "today": "Dnes je ten den, lásko!",
+    "addToCalendar": "Přidat do kalendáře",
+    "calendarSummary": "Setkáváme se 💕"
+  }
+}
