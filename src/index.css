@@ -11,12 +11,22 @@ body,
   height: 100%;
 }
 
+html {
+  /* Fallback so iOS Safari never reveals a plain white gap — at the top
+     status-bar safe area, in the elastic overscroll bounce, or while the
+     bottom toolbar collapses/expands — behind our `position: fixed`
+     background. */
+  background-color: #ff9ecb;
+  overscroll-behavior-y: none;
+}
+
 body {
   margin: 0;
   font-family: 'Quicksand', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   overscroll-behavior-y: none;
+  background-color: #ff9ecb;
 }
 
 .font-script {
@@ -71,6 +81,21 @@ body {
   50% {
     opacity: 1;
   }
+}
+
+@keyframes love-level-flow {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.love-level-fill {
+  background: linear-gradient(90deg, #ff4f9e, #ff9ecb, #ffd1ec, #ff9ecb, #ff4f9e);
+  background-size: 200% 100%;
+  animation: love-level-flow 2.5s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

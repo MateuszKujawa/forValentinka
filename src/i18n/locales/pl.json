@@ -34,5 +34,15 @@
     "today": "To już dzisiaj skarbie!",
     "addToCalendar": "Dodaj do kalendarza",
     "calendarSummary": "Spotykamy się 💕"
+  },
+  "nav": {
+    "home": "Start",
+    "loveLevel": "Poziom miłości",
+    "comingSoon": "to będzie niebawem skarbie...",
+    "comingSoonTitle": "Wkrótce... 🤫"
+  },
+  "loveLevel": {
+    "title": "Poziom miłości 💗",
+    "levelLabel": "Poziom"
   }
 }

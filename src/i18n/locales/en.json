@@ -34,5 +34,15 @@
     "today": "It's today, love!",
     "addToCalendar": "Add to calendar",
     "calendarSummary": "We're meeting up 💕"
+  },
+  "nav": {
+    "home": "Home",
+    "loveLevel": "Love level",
+    "comingSoon": "coming soon, love...",
+    "comingSoonTitle": "Coming soon... 🤫"
+  },
+  "loveLevel": {
+    "title": "Love level 💗",
+    "levelLabel": "Level"
   }
 }

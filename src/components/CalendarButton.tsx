@@ -1,14 +1,29 @@
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 interface CalendarButtonProps {
-  href: string
+  icsContent: string
   label: string
 }
 
-export default function CalendarButton({ href, label }: CalendarButtonProps) {
+export default function CalendarButton({ icsContent, label }: CalendarButtonProps) {
+  const [href, setHref] = useState<string | null>(null)
+
+  useEffect(() => {
+    // iOS Safari has tightened restrictions on top-level navigation to
+    // data: URIs (the classic "Add to Calendar" trick), so it can silently
+    // do nothing when tapped. A Blob object URL with the same text/calendar
+    // MIME type isn't subject to that restriction and still hands off to
+    // the Calendar app's add-event sheet.
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    setHref(url)
+    return () => URL.revokeObjectURL(url)
+  }, [icsContent])
+
   return (
     <motion.a
-      href={href}
+      href={href ?? undefined}
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.4 }}

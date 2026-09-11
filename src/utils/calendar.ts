@@ -18,17 +18,14 @@ function escapeIcsText(text: string): string {
   return text.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n')
 }
 
-// A data: URI with a text/calendar MIME type is the classic "Add to Apple
-// Calendar" trick: tapping it on iOS Safari hands off straight to the
-// Calendar app's add-event sheet, no backend or library needed. The event
-// is all-day (VALUE=DATE) rather than a timed appointment, since MEETING_DATE
-// is a day, not a specific hour.
-export function buildMeetingIcsDataUrl(summary: string): string {
+// The event is all-day (VALUE=DATE) rather than a timed appointment, since
+// MEETING_DATE is a day, not a specific hour.
+export function buildMeetingIcs(summary: string): string {
   const start = formatIcsDate(MEETING_DATE)
   const end = formatIcsDate(addDays(MEETING_DATE, 1))
   const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z')
 
-  const ics = [
+  return [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//ForValentinka//PL',
@@ -42,6 +39,4 @@ export function buildMeetingIcsDataUrl(summary: string): string {
     'END:VEVENT',
     'END:VCALENDAR',
   ].join('\r\n')
-
-  return `data:text/calendar;charset=utf-8,${encodeURIComponent(ics)}`
 }

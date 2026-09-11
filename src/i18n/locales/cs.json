@@ -34,5 +34,15 @@
     "today": "Dnes je ten den, lásko!",
     "addToCalendar": "Přidat do kalendáře",
     "calendarSummary": "Setkáváme se 💕"
+  },
+  "nav": {
+    "home": "Domů",
+    "loveLevel": "Úroveň lásky",
+    "comingSoon": "už to brzy bude, lásko...",
+    "comingSoonTitle": "Už brzy... 🤫"
+  },
+  "loveLevel": {
+    "title": "Úroveň lásky 💗",
+    "levelLabel": "Úroveň"
   }
 }
